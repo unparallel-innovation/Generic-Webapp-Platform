@@ -27,7 +27,7 @@ export default function Home({allPostsData}) {
             </Head>
             {!session ? (
                 <>
-                    <p>Not signed in</p>
+                    <h4>Not signed in</h4>
                     <br />
                     <button onClick={() => signIn()}>Sign in</button>
                 </>
@@ -54,7 +54,7 @@ export default function Home({allPostsData}) {
                             ))}
                         </ul>
                     </section>
-                    <div className={styles.header}>
+                    <div>
                         <h4>Signed in as {session.user.name}</h4>
                         <button onClick={() => signOut()}>Sign out</button>
                     </div>
