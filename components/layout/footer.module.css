@@ -1,0 +1,14 @@
+.footer{
+    height: 26px;
+    background-color: #AAAAAA;
+    /*--bs-bg-opacity: 0.2;*/
+}
+
+.text{
+    font-size: 10px;
+}
+
+.privacy{
+    font-size: 10px;
+    color: #666666
+}
