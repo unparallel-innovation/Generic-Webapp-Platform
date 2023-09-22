@@ -1,0 +1,16 @@
+{
+    "npm": false,
+    "git": {
+        "tagName": "v${version}"
+    },
+    "gitlab": {
+        "release": true
+    },
+    "plugins": {
+        "@release-it/keep-a-changelog": {
+            "filename": "CHANGELOG.md",
+            "addUnreleased": true,
+            "strictLatest": false
+        }
+    }
+}
