@@ -2,6 +2,14 @@ import {useSession} from "next-auth/react";
 import {Card} from "react-bootstrap";
 import Date from "../date";
 import jwt_decode from "jwt-decode";
+import FrontendHelper from "@unparallel/frontend-helper";
+
+async function getSession(){
+    const fh = new FrontendHelper();
+    const session = await fh.getSession("http://localhost:3000");
+
+    return session;
+}
 
 export default function Welcome() {
     const {data: session, status} = useSession();
@@ -13,6 +21,8 @@ export default function Welcome() {
         else
             return <span key={index}>{item}</span>
     });
+
+    getSession().then(session => console.log(session));
 
     return (
         <div className={"d-flex w-100 py-3"}>

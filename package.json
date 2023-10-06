@@ -22,7 +22,8 @@
     "remark-html": "^15.0.2",
     "sass": "^1.63.6",
     "swr": "^2.2.0",
-    "jwt-decode": "^3.1.2"
+    "jwt-decode": "^3.1.2",
+    "@unparallel/frontend-helper": "^0.2.0"
   },
   "release-it": {},
   "devDependencies": {
