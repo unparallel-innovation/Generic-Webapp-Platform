@@ -2,14 +2,7 @@ import {useSession} from "next-auth/react";
 import {Card} from "react-bootstrap";
 import Date from "../date";
 import jwt_decode from "jwt-decode";
-import FrontendHelper from "@unparallel/frontend-helper";
-
-async function getSession(){
-    const fh = new FrontendHelper();
-    const session = await fh.getSession("http://localhost:3000");
-
-    return session;
-}
+import {getSession} from "../../lib/helper";
 
 export default function Welcome() {
     const {data: session, status} = useSession();
