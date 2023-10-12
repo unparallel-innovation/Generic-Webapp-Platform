@@ -4,6 +4,7 @@ import Header from "./header";
 import globals from "../../styles/globals.module.css";
 import Login from "../login/login";
 import Footer from "./footer";
+import {PROJECT_NAME, PROGRAMME_NAME, GRANT_AGREEMENT_NUMBER} from "../../lib/constants";
 
 export const siteTitle = "Common UI";
 
@@ -34,7 +35,7 @@ export default function Layout({ children, home }){
                 {!session ? <Login/> : children}
             </div>
             <footer>
-                <Footer/>
+                <Footer projectName={PROJECT_NAME} programmeName={PROGRAMME_NAME} grantAgreementNumber={GRANT_AGREEMENT_NUMBER}/>
             </footer>
         </div>
     );
