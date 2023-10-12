@@ -12,9 +12,9 @@ export default function Header(){
             </Navbar.Brand>
 
             <Nav className={"justify-content-end w-100"}>
-                <NavDropdown className={"dropdown-align-right"} title={
+                <NavDropdown title={
                     <PersonCircle color={"dark"} size={"25"}/>
-                } menuVariant={"dark"}>
+                } menuVariant={"dark"} align={"end"}>
                     <NavDropdown.Item disabled>
                         {session.user.name}
                     </NavDropdown.Item>
